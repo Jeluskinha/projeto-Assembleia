@@ -7,6 +7,7 @@ const GlobalStyle  = createGlobalStyle`
     --Blue-2: #5FCDD9;
     --Blue-3: #72F2EB;
     --Background-1: #C7FFED;
+    --Border: #b3b8bd;
     --Grey-4: #121214;
     --Grey-3: #212529;
     --Grey-2: #343B41;
@@ -21,7 +22,7 @@ const GlobalStyle  = createGlobalStyle`
     --fontColor-2: #F8F9FA; //CCC
     --fontWeight-Strong: 700;
     --fontWeight-Soft: 400;
-    --fontInter: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;700&family=Inter:wght@100;200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,500&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+    --font-family: 'Inter', sans-serif;
 
     font-size: 60%;   
   }

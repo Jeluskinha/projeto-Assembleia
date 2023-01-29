@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const NavigationStyle = styled.nav`
   height: 100%;
-  min-width: 400px;
+  min-width: 30%;
   background-color: gray;
   padding: 10px;
 

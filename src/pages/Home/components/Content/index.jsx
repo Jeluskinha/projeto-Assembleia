@@ -6,24 +6,62 @@ function Content() {
       <section>
         <table>
           <thead>
-            <th>head1</th>
-            <th>head2</th>
-            <th>head3</th>
-            <th>head4</th>
+            <tr>
+              <td colspan="7"> {/* Numero colspan representa espaços vazios no preencimento*/}
+                <div>
+                  <h2>ESCALA PARA O PROJETO INFANTO DO DIA 19 Janeiro a 9 Março 2023</h2>
+                </div>
+              </td>
+            </tr>
+            <th>Dia</th>
+            <th>Semana</th>
+            <th>Mês</th>
+            <th>Grupo</th>
+            <th>Grupo</th>
+            <th>Componentes do Grupo</th>
+            <th>Ocupações</th>
           </thead>
           <tbody>
             <tr>
               <td>linha 1, célula 1</td>
               <td>linha 1, célula 2</td>
+              <td>linha 1, célula 2</td>
+              <td>linha 1, célula 2</td>
+              <td>linha 1, célula 2</td>
+              <td>linha 1, célula 2</td>
+              <td>linha 1, célula 2</td>
             </tr>
             <tr>
               <td>linha 2, célula 1</td>
               <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
+            </tr>
+            <tr>
+              <td>linha 2, célula 1</td>
+              <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
+            </tr>
+            <tr>
+              <td>linha 2, célula 1</td>
+              <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
+              <td>linha 2, célula 2</td>
             </tr>
           </tbody>
-          <tfoot>
+          {/* <tfoot>
             <tr>
-              <td colspan="4"> {/* Numero colspan representa espaços vazios no preencimento*/}
+              <td colspan="4"> 
                 <div>
                   <a href="#">&laquo;</a>{" "}
                   <a class="active" href="#">
@@ -34,7 +72,7 @@ function Content() {
                 </div>
               </td>
             </tr>
-          </tfoot>
+          </tfoot>*/}
         </table>
       </section>
     </ContentStyle>

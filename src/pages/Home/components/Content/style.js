@@ -2,11 +2,13 @@ import styled from "styled-components";
 
 const ContentStyle = styled.div`
   height: 100%;
-  width: 70%;
+  width: 100%;
   padding: 20px;
-
-  section{
+  overflow: scroll;
+    
     table {
+      width: 50%;
+      margin: 0 auto;
       box-sizing: border-box;
       border-collapse: collapse;
       thead {
@@ -32,15 +34,17 @@ const ContentStyle = styled.div`
             }
           }
         }
-        th{
-          width: max-content;
-          padding: 5px 0px;
-          background-color: white;
-          color: #86a2ce;
-          font-family: var(--font-family);
-          font-size: 1.6rem;
-          font-weight: 700;
-          white-space: nowrap;
+        tr{
+          th{
+            width: max-content;
+            padding: 5px 15px;
+            background-color: white;
+            color: #86a2ce;
+            font-family: var(--font-family);
+            font-size: 1.6rem;
+            font-weight: 700;
+            white-space: nowrap;
+          }
         }
       }
   
@@ -80,14 +84,12 @@ const ContentStyle = styled.div`
           }
         }
       }
-  
       /* tfoot {
         background-color: white;
         border: 3px solid black;
         tr {
         }
       } */
-  }
   }
 `;
 

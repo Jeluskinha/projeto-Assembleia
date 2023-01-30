@@ -2,9 +2,11 @@ import styled from 'styled-components';
 
 const NavigationStyle = styled.nav`
   height: 100%;
-  min-width: 30%;
+  width: 20%;
   background-color: gray;
   padding: 10px;
+
+  display: none;
 
   ul{
     list-style: none;
@@ -13,6 +15,9 @@ const NavigationStyle = styled.nav`
       border: 3px solid black;
       cursor: pointer;
     }
+  }
+  @media (max-width: 426px){ 
+    display: none;
   }
 `;
 

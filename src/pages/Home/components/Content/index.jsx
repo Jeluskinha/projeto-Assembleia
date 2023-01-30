@@ -1,67 +1,30 @@
 import ContentStyle from "./style";
+import {tableColum, tableLine} from '../../../../data/escala.js'
 
 function Content() {
+
+  
   return (
     <ContentStyle>
-      <section>
         <table>
           <thead>
             <tr>
-              <td colspan="7"> {/* Numero colspan representa espaços vazios no preencimento*/}
+              <td colSpan={tableColum.length}> {/* Numero colspan representa espaços vazios no preencimento*/}
                 <div>
                   <h2>ESCALA PARA O PROJETO INFANTO DO DIA 19 Janeiro a 9 Março 2023</h2>
                 </div>
               </td>
             </tr>
-            <th>Dia</th>
-            <th>Semana</th>
-            <th>Mês</th>
-            <th>Grupo</th>
-            <th>Grupo</th>
-            <th>Componentes do Grupo</th>
-            <th>Ocupações</th>
+            <tr>
+              {tableColum.map((e)=> <th>{e}</th>)}
+            </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>linha 1, célula 1</td>
-              <td>linha 1, célula 2</td>
-              <td>linha 1, célula 2</td>
-              <td>linha 1, célula 2</td>
-              <td>linha 1, célula 2</td>
-              <td>linha 1, célula 2</td>
-              <td>linha 1, célula 2</td>
-            </tr>
-            <tr>
-              <td>linha 2, célula 1</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-            </tr>
-            <tr>
-              <td>linha 2, célula 1</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-            </tr>
-            <tr>
-              <td>linha 2, célula 1</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-              <td>linha 2, célula 2</td>
-            </tr>
+              { tableLine.map(e => <tr>{Object.entries(e).map(([key, value]) => <td>{value}</td>)}</tr>)} 
           </tbody>
           {/* <tfoot>
             <tr>
-              <td colspan="4"> 
+              <td colSpan="4"> 
                 <div>
                   <a href="#">&laquo;</a>{" "}
                   <a class="active" href="#">
@@ -74,7 +37,6 @@ function Content() {
             </tr>
           </tfoot>*/}
         </table>
-      </section>
     </ContentStyle>
   );
 }
